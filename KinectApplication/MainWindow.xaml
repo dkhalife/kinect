@@ -1,0 +1,16 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:WpfViewers="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers" x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="800" Loaded="Window_Loaded_1" Closed="Window_Closed_1">
+    <Grid>
+        <Image x:Name="Image1" HorizontalAlignment="Left" Height="240" Margin="10,10,0,0" VerticalAlignment="Top" Width="320"/>
+        <Image x:Name="Image2" HorizontalAlignment="Left" Height="240" Margin="462,10,0,0" VerticalAlignment="Top" Width="320"/>
+        <WpfViewers:KinectSensorChooser x:Name="kinectSensorChooser1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="299" Width="772"/>
+        <WpfViewers:KinectColorViewer HorizontalAlignment="Left" Height="240" Margin="434,33,0,0" VerticalAlignment="Top" Width="320"/>
+        <Ellipse x:Name="right" Fill="Blue" HorizontalAlignment="Left" Height="25" Margin="44,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="25"/>
+        <Ellipse x:Name="left" Fill="Red" HorizontalAlignment="Left" Height="25" Stroke="Black" VerticalAlignment="Top" Width="25"/>
+        <Rectangle x:Name="head" Fill="#FF00FF0C" HorizontalAlignment="Left" Height="25" Margin="91,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="25"/>
+
+    </Grid>
+</Window>
